@@ -86,6 +86,8 @@ public class GenerateReport extends BaseProcessorExtension {
 
 		exporter.setParameter(JRExporterParameter.JASPER_PRINT, print);
 		exporter.setParameter(JRExporterParameter.OUTPUT_STREAM, reportOS);
+		
+		String hello = "Hello";
 
 		try {
 			exporter.exportReport();
